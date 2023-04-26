@@ -1,0 +1,26 @@
+services:
+  host_1:
+    build:
+      context: host_first/.
+    ports:
+      - '22:22'
+    hostname: ctf_host
+    networks:
+      ctf_SDaT:
+        ipv4_address: 192.168.20.2
+
+  target_2:
+    build:
+      context: .
+    hostname: ctf_target
+    networks:
+      ctf_SDaT:
+        ipv4_address: 192.168.20.3
+
+networks:
+  ctf_SDaT:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 192.168.20.0/24
+         gateway: 192.168.20.1

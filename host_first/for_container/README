@@ -1,0 +1,4 @@
+Hello Player, welcome to the Challenge!
+Your first task is to ssh into the target PC located in this subnet, with username as 'labuser'.
+If you connect to the correct ports, the target will reveal its login password to you. The necessary tools have been installed on this system for you.
+However, remember that the target will shift each character in the original password 19 characters ahead in the alphabet and send this encrypted password to you!
