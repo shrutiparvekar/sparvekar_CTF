@@ -1,0 +1,19 @@
+name: Find the Key!
+description: |
+  The end goal of the challenge is to find a key hidden in the target machine to capture the final flag.
+  You will find hints and useful instruction scattered across the challenge. Have fun!
+  **Connection Instructions**:
+  
+  $ `ssh -L localhost:<local port>:find_the_key:22 -p 56151 <username>@cs561.cs.umass.edu`
+
+  This starts an SSH session with the SSH server on swarm machine, and this server is connected to the internal network.
+  Now you can open a new terminal window on your machine, and connect to `localhost:<local port>` to access the challenge
+
+  Please enclose the flag you found in CTF_SDaT{} before submitting.
+  
+value: 100
+category: Miscellaneous
+flag: CTF_SDaT{ex7uTWNjqfRTqz1dyPv}
+
+# administrative
+container_name: find_the_key
