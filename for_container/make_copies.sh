@@ -9,6 +9,7 @@ while [[ $i -lt 101 ]]; do
         ((i++))
         if [[ "$i" == '49' ]]; then
                 cp this_is_the_key.txt $targ_path/is_this_the_key_$i
+                chmod +x $targ_path/is_this_the_key_$i
                 ((i++))
         fi
 done
